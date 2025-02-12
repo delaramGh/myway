@@ -1,1 +1,1 @@
-Thread 1 says hello!
+Thread 1 says hello :) Thread 2 says hello :) 

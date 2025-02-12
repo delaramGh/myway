@@ -2,15 +2,15 @@
 #define _MY_LIB_H_
 
 #include <stdio.h>      
-#include <stdlib.h>     // For exit, malloc, free
-#include <errno.h>      // For errno
+#include <stdlib.h>    
+#include <errno.h>      
 #include <string.h>     // For strerror
-#include <unistd.h>     // For size_t
+#include <unistd.h>    
 #include <sys/syscall.h>// For syscall 
 #include <sys/types.h>  // For mode_t
 #include <sys/stat.h>   // For S_IRUSR, S_IWUSR
 #include <fcntl.h>      // For O_RDONLY, O_WRONLY
-#include <pthread.h>    // For pthread_mutex_t 
+#include <pthread.h>   
 
 
 #define MAX_HANDLES 1024

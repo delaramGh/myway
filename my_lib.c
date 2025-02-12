@@ -121,7 +121,7 @@ ssize_t myos_read(myos_handle_t handle, void *buffer, size_t len)
 
     if (pthread_mutex_trylock(&g_contexts[handle].mtx) != 0) 
     {
-        fprintf(stderr, "myos_read: handle %d is busy elsewhere.\n", handle);
+        // fprintf(stderr, "myos_read: handle %d is busy elsewhere.\n", handle);
         errno = EBUSY;
         return -1;
     }
@@ -154,7 +154,7 @@ ssize_t myos_write(myos_handle_t handle, const void *buffer, size_t len)
 
     if (pthread_mutex_trylock(&g_contexts[handle].mtx) != 0) 
     {
-        fprintf(stderr, "myos_write: handle %d is busy elsewhere.\n", handle);
+        // fprintf(stderr, "myos_write: handle %d is busy elsewhere.\n", handle);
         errno = EBUSY;
         return -1;
     }
